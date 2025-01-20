@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import photoeditor from "../../Assets/Projects/photoeditor.jpg";
+import recipe from "../../Assets/Projects/recipe.jpg";
+import socialmedia from "../../Assets/Projects/socialmedia.jpg";
+import studentg from "../../Assets/Projects/studentg.jpg";
 
 function Projects() {
   return (
@@ -15,40 +13,40 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Personal Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on during my academics.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={studentg}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              title="Student Grievance and Redressal system"
+              description="The Student Grievance and Redressal System is a web-based platform designed to streamline the process of filing, tracking, and resolving student complaints. Developed using PHP, JavaScript, and MySQL, this system offers an intuitive interface for students to submit grievances and for administrators to manage and address them efficiently. The idea for this project originated from real-world observations of the challenges students face in communicating their issues within academic institutions, aiming to provide a transparent and effective solution."
+              ghLink="https://github.com/rishita-badole/Student-Grievance-system.git"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={photoeditor}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Simple Photo Editor"
+              description="The Simple Photo Editor is a web application designed to provide basic photo editing functionalities such as cropping, resizing, and applying filters. Built using HTML5, CSS, JavaScript, and Bootstrap, this user-friendly tool allows users to easily upload and modify images directly in the browser. The idea for this project stemmed from the need for a lightweight, accessible photo editing solution for quick and simple adjustments."
+              ghLink="https://github.com/rishita-badole/Photo-editor-.git"
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={socialmedia}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Social Media App"
+              description="The Social Media App is a web application developed using React.js and Redux for state management. It offers core social media functionalities like user profiles, posts, comments, and likes. The app is designed to provide a seamless and interactive user experience, simulating real-world social networking platforms. The idea originated from the growing need to understand modern web development frameworks and their application in building scalable and dynamic web interfaces."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -56,35 +54,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={recipe}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
+              title="Recipe Web App"
+              description="The Recipe Web App is a simple yet effective platform developed using JavaScript, HTML, and CSS. It allows users to search for recipes, save their favorites, and view detailed cooking instructions. The app was inspired by the real-world need for a digital solution to manage and explore a variety of recipes efficiently."
+              ghLink="https://github.com/rishita-badole/forkify-proj.git"
               demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
