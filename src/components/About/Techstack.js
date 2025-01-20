@@ -10,11 +10,8 @@ import {
   DiLinux,
 } from "react-icons/di";
 import {
-  SiFirebase,
   SiPostgresql,
-  Si
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
