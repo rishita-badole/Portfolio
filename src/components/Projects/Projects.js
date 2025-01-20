@@ -27,7 +27,7 @@ function Projects() {
               title="Student Grievance and Redressal system"
               description="The Student Grievance and Redressal System is a web-based platform designed to streamline the process of filing, tracking, and resolving student complaints. Developed using PHP, JavaScript, and MySQL, this system offers an intuitive interface for students to submit grievances and for administrators to manage and address them efficiently. The idea for this project originated from real-world observations of the challenges students face in communicating their issues within academic institutions, aiming to provide a transparent and effective solution."
               ghLink="https://github.com/rishita-badole/Student-Grievance-system.git"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="http://127.0.0.1/project1/studentgrev/index.php"
             />
           </Col>
 
@@ -69,7 +69,7 @@ function Projects() {
               isBlog={false}
               title="Beauty brand website"
               description="A sleek, minimalist beauty brand website built with HTML and CSS. It features a clean layout, intuitive navigation, and responsive design, showcasing products like skincare, makeup, and hair care in an elegant and user-friendly manner."
-              ghLink="https://github.com/rishita-badole/forkify-proj.git"
+              ghLink="https://github.com/rishita-badole/website-for-beauty-brand.git"
               demoLink="https://unique-clafoutis-83d82b.netlify.app/"
             />
           </Col>
