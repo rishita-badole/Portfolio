@@ -91,11 +91,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href="https://drive.google.com/drive/folders/1q719bMh295Vxqy6dkriENIKQMXa96uLc?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> My notes
               </Nav.Link>
             </Nav.Item>
 
