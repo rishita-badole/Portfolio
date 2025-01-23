@@ -1,6 +1,4 @@
-Here's your **GitHub-friendly README** formatted properly for your portfolio repository:
 
-* * * * *
 
 Portfolio Website
 =================
@@ -101,14 +99,3 @@ Follow these steps to run the project locally:
 
 * * * * *
 
-❤️ Show Your Support
---------------------
-
-If you like this portfolio:
-
-1.  🌟 Give this repository a **star**!
-2.  🛒 [Buy Me a Coffee](https://www.buymeacoffee.com/yourusername)
-
-* * * * *
-
-Feel free to let me know if you'd like additional sections (e.g., License, Contribution Guidelines, etc.).
