@@ -1,76 +1,114 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+Here's your **GitHub-friendly README** formatted properly for your portfolio repository:
 
-<br/>
+* * * * *
 
-<center>
+Portfolio Website
+=================
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://luminous-moxie-7b5c3d.netlify.app/)\
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com/)\
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com/)\
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com/)
 
-</center>
+🚀 Live Preview
+---------------
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+Check out my portfolio live here: **[luminous-moxie-7b5c3d.netlify.app](https://luminous-moxie-7b5c3d.netlify.app/)**
 
-## TL;DR
+* * * * *
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+📌 About
+--------
 
-## Built With
+This is my personal portfolio website designed to showcase:
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+-   My technical skills
+-   Selected projects
+-   Resume and other achievements
 
-This project was built using these technologies.
+* * * * *
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+🛠️ Built With
+--------------
 
-## Features
+This portfolio was built using:
 
-**📖 Multi-Page Layout**
+-   **React.js**
+-   **CSS3**
+-   **Node.js**
+-   **Vite (or CRA)**
+-   **Netlify** for deployment
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+* * * * *
 
-**📱 Fully Responsive**
+✨ Features
+----------
 
-## Getting Started
+-   **📖 Multi-Page Layout**
+-   **🎨 Styled with CSS for easy customization**
+-   **📱 Fully Responsive Design**
+-   **✨ Showcasing Projects, Resume, and Skills**
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+* * * * *
 
-## 🛠 Installation and Setup Instructions
+🛠 Installation and Setup Instructions
+--------------------------------------
 
-1. Installation: `npm install`
+Follow these steps to run the project locally:
 
-2. In the project directory, you can run: `npm start`
+1.  **Clone the repository**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+    ```
+    git clone https://github.com/yourusername/portfolio.git
 
-## Usage Instructions
+    ```
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+2.  **Navigate to the project directory**
 
-### Show your support
+    ```
+    cd portfolio
 
-Give a ⭐ if you like this website!
+    ```
 
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+3.  **Install dependencies**
+
+    ```
+    npm install
+
+    ```
+
+4.  **Run the development server**
+
+    ```
+    npm start
+
+    ```
+
+    Open **[http://localhost:3000](http://localhost:3000/)** in your browser to see the website.\
+    The app will reload automatically if you make changes to the code.
+
+* * * * *
+
+🔧 Customization
+----------------
+
+1.  Navigate to the `/src/components/` directory.
+2.  Modify components to include your:
+    -   Name
+    -   Skills
+    -   Project details
+    -   Resume links, etc.
+
+* * * * *
+
+❤️ Show Your Support
+--------------------
+
+If you like this portfolio:
+
+1.  🌟 Give this repository a **star**!
+2.  🛒 [Buy Me a Coffee](https://www.buymeacoffee.com/yourusername)
+
+* * * * *
+
+Feel free to let me know if you'd like additional sections (e.g., License, Contribution Guidelines, etc.).
