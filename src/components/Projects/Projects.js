@@ -27,7 +27,7 @@ function Projects() {
               title="Student Grievance and Redressal system"
               description="The Student Grievance and Redressal System is a web-based platform designed to streamline the process of filing, tracking, and resolving student complaints. Developed using PHP, JavaScript, and MySQL, this system offers an intuitive interface for students to submit grievances and for administrators to manage and address them efficiently. The idea for this project originated from real-world observations of the challenges students face in communicating their issues within academic institutions, aiming to provide a transparent and effective solution."
               ghLink="https://github.com/rishita-badole/student-grievance-and-redressal-system.git"
-              demoLink="http://phpcred898.infinityfreeapp.com/"
+              demoLink="http://phpcred898.infinityfreeapp.com/?i=1"
             />
           </Col>
 
