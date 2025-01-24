@@ -7,10 +7,9 @@ import { AiOutlineDownload } from "react-icons/ai";
 function ResumeNew() {
   const [width, setWidth] = useState(window.innerWidth);
 
-  const googleDriveLink =
-    "https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/edit?usp=sharing"; // Replace with your Google Drive link
-  const googleDrivePreview =
-    "https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/preview"; // Preview URL
+  const googleDriveFileId = "17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70"; // Your file ID
+  const downloadLink = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
+  const previewLink = `https://docs.google.com/document/d/${googleDriveFileId}/preview`;
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -25,7 +24,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", marginBottom: "20px" }}>
           <Button
             variant="primary"
-            href={googleDriveLink}
+            href={downloadLink} // Corrected download link
             target="_blank"
             style={{ maxWidth: "250px" }}
             aria-label="Download CV"
@@ -37,14 +36,14 @@ function ResumeNew() {
 
         <Row className="resume" style={{ justifyContent: "center" }}>
           <iframe
-            src={googleDrivePreview}
-            width={width > 786 ? "80%" : "100%"} // Adjust width for responsiveness
-            height="1480px" // Increased height for better visibility
+            src={previewLink}
+            width={width > 786 ? "80%" : "100%"}
+            height="1460px"
             style={{
               border: "none",
-              borderRadius: "8px", // Optional: Add rounded corners for aesthetics
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Optional: Subtle shadow
               margin: "0 auto",
+              borderRadius: "8px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
             }}
             title="Resume Preview"
           />
@@ -53,7 +52,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", marginTop: "20px" }}>
           <Button
             variant="primary"
-            href={googleDriveLink}
+            href={downloadLink} // Corrected download link
             target="_blank"
             style={{ maxWidth: "250px" }}
             aria-label="Download CV"
