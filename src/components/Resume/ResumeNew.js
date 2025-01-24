@@ -23,24 +23,20 @@ function ResumeNew() {
         <Particle />
         <Row style={{ justifyContent: "center", marginBottom: "20px" }}>
           <Button
-  variant="primary"
-  href={downloadLink} // Corrected download link
-  target="_blank"
-  style={{
-    maxWidth: "250px",
-    position: "relative",
-    zIndex: 999, // Ensure the button is on top
-    pointerEvents: "auto", // Ensure it's clickable
-  }}
-  aria-label="Download CV"
->
-  <AiOutlineDownload />
-  &nbsp;Download CV
-</Button>
-
+            variant="primary"
+            href={downloadLink} // Corrected download link
+            target="_blank"
+            style={{
+              maxWidth: "250px",
+              position: "relative",
+              zIndex: 999, // Ensure the button is on top
+              pointerEvents: "auto", // Ensure it's clickable
+            }}
+            aria-label="Download CV"
+            >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button>
+         </Button>
         </Row>
 
         <Row className="resume" style={{ justifyContent: "center" }}>
