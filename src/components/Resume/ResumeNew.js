@@ -34,7 +34,7 @@ function ResumeNew() {
 
         <Row className="resume">
           <iframe
-            src="https://drive.google.com/file/d/your-file-id/preview" // Replace with your Google Drive file preview URL
+            src="https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/edit?usp=sharing" // Replace with your Google Drive file preview URL
             width={width > 786 ? "80%" : "100%"}
             height="600"
             style={{
