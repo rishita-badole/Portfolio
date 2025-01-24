@@ -39,7 +39,7 @@ function ResumeNew() {
           <iframe
             src={googleDrivePreview}
             width={width > 786 ? "80%" : "100%"} // Adjust width for responsiveness
-            height="1000px" // Increased height for better visibility
+            height="1400px" // Increased height for better visibility
             style={{
               border: "none",
               borderRadius: "8px", // Optional: Add rounded corners for aesthetics
