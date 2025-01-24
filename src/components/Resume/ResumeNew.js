@@ -7,7 +7,10 @@ import { AiOutlineDownload } from "react-icons/ai";
 function ResumeNew() {
   const [width, setWidth] = useState(window.innerWidth);
 
-  const googleDriveLink = "https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/edit?usp=sharing"; // Replace with your Google Drive link
+  const googleDriveLink =
+    "https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/edit?usp=sharing"; // Replace with your Google Drive link
+  const googleDrivePreview =
+    "https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/preview"; // Preview URL
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -19,7 +22,7 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", marginBottom: "20px" }}>
           <Button
             variant="primary"
             href={googleDriveLink}
@@ -32,21 +35,22 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
+        <Row className="resume" style={{ justifyContent: "center" }}>
           <iframe
-            src="https://docs.google.com/document/d/17lln5IZylihjr2SFLMvBHo7KMKUePgubyPIEb90xm70/preview" // Replace with your Google Drive file preview URL
-            width={width > 786 ? "80%" : "100%"}
-            height="600"
+            src={googleDrivePreview}
+            width={width > 786 ? "80%" : "100%"} // Adjust width for responsiveness
+            height="700px" // Increased height for better visibility
             style={{
               border: "none",
-              display: "block",
+              borderRadius: "8px", // Optional: Add rounded corners for aesthetics
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Optional: Subtle shadow
               margin: "0 auto",
             }}
-            title="Resume"
+            title="Resume Preview"
           />
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", marginTop: "20px" }}>
           <Button
             variant="primary"
             href={googleDriveLink}
