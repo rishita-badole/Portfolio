@@ -1,54 +1,46 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import React from "react";
 import Particle from "../Particle";
-import pdf from "src\Assets\Rishita Badole - Resume.pdf"; // Updated PDF path
+import resumePDF from "../../Assets/Rishita_Badole_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+    <div className="resume-section">
+      <Particle />
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
+      {/* Resume Download Button */}
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <a href={resumePDF} download target="_blank" rel="noopener noreferrer">
+          <button
+            style={{
+              padding: "10px 20px",
+              fontSize: "16px",
+              cursor: "pointer",
+              backgroundColor: "#007bff",
+              color: "#fff",
+              border: "none",
+              borderRadius: "8px",
+            }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-      </Container>
+            <AiOutlineDownload style={{ marginRight: "8px" }} />
+            Download Resume
+          </button>
+        </a>
+      </div>
+
+      {/* Embedded PDF Viewer */}
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Document
+          file={resumePDF}
+          onLoadError={(error) => console.error("PDF load error:", error)}
+        >
+          <Page pageNumber={1} />
+        </Document>
+      </div>
     </div>
   );
 }
