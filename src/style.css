@@ -741,3 +741,26 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.tech-icons {
+  padding: 20px;
+  border: 2px solid #aa00ff;
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.tech-icons:hover {
+  transform: scale(1.05);
+}
+
+.tech-icons svg {
+  font-size: 2rem; /* Adjust icon size */
+  margin-bottom: 10px;
+}
+
+.tech-icons div {
+  font-size: 1rem; /* Adjust text size */
+}
+
