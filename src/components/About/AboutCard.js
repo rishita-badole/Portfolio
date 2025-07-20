@@ -1,39 +1,47 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import "./About.css";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card className="quote-card-view about-card">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hello! I’m <span className="purple">Rishita Badole</span> — born in
-            <span className="purple"> Madhya Pradesh</span>, currently based in
+          <p className="about-text">
+            Born in Maharashtra, sown and grown in
+            <span className="purple"> Madhya Pradesh</span>, <br />
+            <br />
+            currently criticizing food and learning Marathi in
             <span className="purple"> Pune</span>.
             <br />
-            I *just* wrapped up my Master’s in Computer Applications from
-            Savitribai Phule Pune University, the degree isn’t in hand yet, but the stress definitely is.
             <br />
-            Before that, I earned my BCA from DAVV, because apparently I enjoy structured chaos and project deadlines.
+            <br />I{" "}
+            <b>
+              <u>JUST</u>
+            </b>{" "}
+            wrapped up my MCA! The degree isn’t in hand yet, but the stress
+            <span className="purple"> definitely is.</span>
             <br />
             <br />
-            Outside the world of tech and documentation, I’ve got a flair for the dramatic (in a good way). Here’s what lights me up:
+            <br />
+            Outside the world of tech and documentation,I like
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Owning the mic (Oratory & Presentations)
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing content that’s equal part of clear and worth reading
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Jamming to music & getting lost in books (sometimes intentionally)
-            </li>
-          </ul>
+          <div className="activity-container">
+            <div className="activity-box">
+              <span>Owning the mic</span>
+            </div>
+            <div className="activity-box">
+              <span>Jamming to music</span>
+            </div>
+            <div className="activity-box">
+              <span>Getting lost in books [Quite literally]</span>
+            </div>
+          </div>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "If you can write it or say it well, you’ve already won half the game."
+          <p className="about-quote">
+            "If you can write it or say it well, you’ve already won half the
+            game."
           </p>
           <footer className="blockquote-footer">Rishita</footer>
         </blockquote>
