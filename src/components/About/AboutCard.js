@@ -9,12 +9,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p className="about-text">
-            Born in Maharashtra, sown and grown in
-            <span className="purple"> Madhya Pradesh</span>, <br />
+            Born in Maharashtra, sown and grown in the cleanest city of India 
+            <span className="purple"> Indore</span><br />
             <br />
-            currently criticizing food and learning Marathi in
+            Currently criticizing food and learning Marathi in
             <span className="purple"> Pune</span>.
-            <br />
             <br />
             <br />I{" "}
             <b>
@@ -24,26 +23,24 @@ function AboutCard() {
             <span className="purple"> definitely is.</span>
             <br />
             <br />
-            <br />
             Outside the world of tech and documentation,I like
           </p>
           <div className="activity-container">
             <div className="activity-box">
-              <span>Owning the mic</span>
+              <span> Owning the stage</span>
             </div>
             <div className="activity-box">
-              <span>Jamming to music</span>
+              <span> Jamming to music</span>
             </div>
             <div className="activity-box">
-              <span>Getting lost in books [Quite literally]</span>
+              <span> Getting lost in books [Quite literally]</span>
             </div>
           </div>
 
           <p className="about-quote">
-            "If you can write it or say it well, you’ve already won half the
+            "If you can write and convey well, you’ve already won half the
             game."
           </p>
-          <footer className="blockquote-footer">Rishita</footer>
         </blockquote>
       </Card.Body>
     </Card>

@@ -34,8 +34,8 @@ function Toolstack() {
   ];
 
   const skills = [
-  "Oratory", "Research", "Storytelling", "Communication",
-  "Time Management", "Teamwork", "Attention to Detail",
+  "Research", "Presentation", "Analytical Thinking",
+  "Time Management", "Collaboration", "Attention to Detail",
   "Creativity", "Problem Solving"
 ];
 
